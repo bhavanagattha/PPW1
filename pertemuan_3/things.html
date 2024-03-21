@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form oninput="sum.value = parseInt(A.value) + 
+    parseInt(B.value) + parseInt(C.value)" 
+    action="/action_page.php" target="_blank">
+<!-- Text input -->
+        <h2>General Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" name="name"><br>
+<!-- Radio Input For Male -->
+        <label for="sex">Sex:</label>
+        <input type="radio" name="sex" id="male" value="male">
+        <label for="male">Male</label>
+<!--  Radio Input For Female -->
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="female">Female</label> <br><br>
+        
+<!-- Select Countries -->
+        <label for="country">Country: </label>
+        <select name="country" id="country">
+            <option>Select an option</option>
+            <option value="nepal">Nepal</option>
+            <option value="ind">Indonesia</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+<!-- Select Cars -->
+        <label for="cars">Choose a car:</label>      
+        <select id="cars">
+            <optgroup label="Japaneese Cars">
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+            </optgroup>
+            <optgroup label="Swedish Cars">
+                <option value="koenigsegg">Koenigsegg</option>
+                <option value="volvo">Volvo</option>
+            </optgroup>
+        </select><br/><br/>
+
+<!-- Message Block -->
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
+
+<!-- fieldset woth legend -->
+        <h2>Programs</h2>
+        <fieldset>
+            <legend>Best Frotnend Language?</legend>
+            
+            <input type="radio" id="html" name="L_languages" value="HTML">
+            <label for="html">HTML</label><br/>
+            <input type="radio" id="CSS" name="L_languages" value="mySQL">
+            <label for="mySQL">CSS</label><br/>
+            <input type="radio" id="javaScript" name="L_languages" valur="JavaScript">
+            <label for="javaScript">JavaScript</label><br/>
+        </fieldset>
+        <br/>
+        
+<!-- datalists -->
+        <h2>Games</h2>
+        <label for="game">What is the best Fromsoft game?</label>
+        <input list="games" name="game" id="game">
+        
+        <datalist id="games">
+            <option value="Armored Core"></option>"
+            <option value="Elden Ring"></option>"
+            <option value="Sekiro"></option>"
+            <option value="Bloodborne"></option>"
+            <option value="Dark Souls"></option>"
+        </datalist>
+        <br/>
+        <br/>
+        
+<!-- Output and Arithmatic -->
+        <h2>Aritmathics</h2>
+        <input type="number" name="A" value="50" /> + 
+        <input type="range" name="B" value="0" /> + 
+        <input type="number" name="C" value="30" />
+        <br/>
+        Result: <output name="sum"></output>
+        <br/>
+        <br/>
+        
+        
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

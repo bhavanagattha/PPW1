@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar PPW</title>
+  </head>
+  <body>
+    <!-- Membuat tabel yang berisikan semuanya -->
+    <table width="100%">
+      <!-- Membuat header menggunakan tabledata dalam tablerow -->
+      <tr>
+        <header><td colspan="2" width="100%" bgcolor="orange"><h1 align="center">&lt;header&gt;</h1></td></header>
+      </tr>
+      <!-- Membuat tablerow baru dan menaruh nav menggunakan tabledata -->
+      <tr>
+        <nav><td colspan="2" bgcolor="lightgreen"><h1 align="center">&lt;nav&gt;</h1></td></nav>
+      </tr>
+      <!-- Membuat Main menggunakan tablerow dan tabledata -->
+      <tr>
+        <main><td colspan="1" bgcolor="purple"><h1 align="center">&lt;main&gt;</h1>
+          <!-- Membuat section dengan memasukkan tabel baru ke dalam tabeldata -->
+        <section><table width="90%" align="center">
+          <!-- Membuat section menggunakan tablerow dan tabledata dalam tabel baru -->
+          <tr>
+            <td colspan="1" height="90%" bgcolor="yellow"><h1 align="center">&lt;section&gt;</h1>
+              <!-- Membuat tabel baru dalam section yang akan berisikan kedua artikel -->
+              <table width="90%" height="500px" align="center">
+                <article><tr>
+                  <td height="10%" bgcolor="green"><h1 align="center">&lt;article&gt;</h1></td>
+                </tr></article>
+                <!-- Kedua artikel dipisah oleh tablerow dengna tinggi 10px -->
+                <tr height="10px"></tr>
+                <article><tr>
+                  <td height="10%" bgcolor="green"><h1 align="center">&lt;article&gt;</h1></td>
+                </tr>
+                <!-- Membuat jarak antara article dan bagian bawah section-->
+                <tr height="10px"></tr></article>
+              </table>
+            </td>
+          </tr>
+          <!-- Membuat jarak antara section dan bagian bawah main -->
+          <tr height="30px"></tr>
+        </table></section>
+        </td></main>
+        <!-- Membuat aside -->
+        <aside><td colspan="1" bgcolor="powderblue"><h1 align="center">&lt;aside&gt;</h1></td></aside>
+      </tr>
+      <!-- Mebuat footer -->
+      <tr>
+        <footer><td colspan="2" bgcolor="orange"><h1 align="center">&lt;footer&gt;</h1></td></footer>
+      </tr>
+    </table>
+  </body>
+</html>
